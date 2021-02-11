@@ -11,3 +11,4 @@
        - checkout
        - run: dotnet build EvilFizzBuzz\EvilFizzBuzz.sln
        - run: dotnet test EvilFizzBuzz\EvilFizzBuzz.sln
+       - run: dotnet publish EvilFizzBuzz\EvilFizzBuzz.sln
