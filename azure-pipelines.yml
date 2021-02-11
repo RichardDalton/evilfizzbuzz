@@ -22,9 +22,14 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'EvilFizzBuzz.sln'
+    projects: 'EvilFizzBuzz\EvilFizzBuzz.sln'
 
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'test'
+    projects: 'EvilFizzBuzz\EvilFizzBuzz.sln'
+    
+- task: DotNetCoreCLI@2
+  inputs:
     command: 'publish'
-    projects: 'EvilFizzBuzz.sln'
+    projects: 'EvilFizzBuzz\EvilFizzBuzz.sln'
