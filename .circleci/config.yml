@@ -13,4 +13,4 @@
        - run: dotnet test EvilFizzBuzz\EvilFizzBuzz.sln
        - run: dotnet publish EvilFizzBuzz\EvilFizzBuzz.sln
        - store_artifacts:
-          path: /EvilFizzBuzz/bin/Debug/netcoreapp2.1/publish
+          path: C:\Users\circleci\project\EvilFizzBuzz\EvilFizzBuzz\bin\Debug\netcoreapp2.1\publish\
