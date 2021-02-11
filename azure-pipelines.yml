@@ -17,9 +17,14 @@ steps:
   displayName: 'Use .NET Core sdk'
   inputs:
     packageType: sdk
-    version: 2.1.203
+    version: 2.1.813
     installationPath: $(Agent.ToolsDirectory)/dotnet
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
+    projects: 'EvilFizzBuzz.sln'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
     projects: 'EvilFizzBuzz.sln'
