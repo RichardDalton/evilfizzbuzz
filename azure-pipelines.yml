@@ -36,7 +36,7 @@ steps:
     projects: 'EvilFizzBuzz\EvilFizzBuzz.sln'
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    rootFolderOrFile: '$(Build.BinariesDirectory)\EvilFizzBuzz\EvilFizzBuzz.Tests\bin\Debug\netcoreapp2.1\publish\'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory).zip'
