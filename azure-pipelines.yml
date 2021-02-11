@@ -11,7 +11,7 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
-- script: echo Hello, world!
+- script: echo '$(Build.BinariesDirectory)'
   displayName: 'Run a one-line script'
 
 - task: UseDotNet@2
