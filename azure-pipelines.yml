@@ -28,3 +28,8 @@ steps:
   inputs:
     command: 'test'
     projects: 'EvilFizzBuzz\EvilFizzBuzz.sln'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: 'EvilFizzBuzz\EvilFizzBuzz.sln'
